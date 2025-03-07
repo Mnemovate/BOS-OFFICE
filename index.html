@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: "Plus Jakarta Sans", sans-serif;
+            }
+        }
+
+        .header {
+            background-color: #EDECFB;
+            transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .header.scrolled {
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="header fixed top-0 left-0 w-full z-50">
+        <div class="mx-auto flex h-[100px] max-w-full items-center gap-8 px-[70px] sm:px-[20px] lg:px-[70px]">
+
+            <a class="block text-teal-600 mr-[100px]" href="#">
+                <span class="sr-only">Home</span>
+                <img src="/images/logo.svg" alt="BOS OFFICE" />
+            </a>
+
+            <div class="flex flex-1 items-center justify-end md:justify-between">
+                <nav aria-label="Global" class="hidden md:block">
+                    <ul class="flex items-center gap-12 text-sm">
+                        <li>
+                            <a class="text-[#000929] text-[18px] font-medium font-['Plus Jakarta Sans'] transition hover:text-[#000929]/75" href="#"> Catalog </a>
+                        </li>
+
+                        <li>
+                            <a class="text-[#000929] text-[18px] font-medium font-['Plus Jakarta Sans'] transition hover:text-[#000929]/75" href="#"> Featured </a>
+                        </li>
+
+                        <li>
+                            <a class="text-[#000929] text-[18px] font-medium font-['Plus Jakarta Sans'] transition hover:text-[#000929]/75" href="#"> Contact </a>
+                        </li>
+
+                        <li>
+                            <a class="text-[#000929] text-[18px] font-medium font-['Plus Jakarta Sans'] transition hover:text-[#000929]/75" href="#"> Blog </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="flex items-center gap-4">
+                    <div class="flex gap-4">
+                        <!-- Tombol Login -->
+                        <a class="rounded-lg border-2 border-[#E0DEF7] px-6 py-3 text-[18px] font-bold font-['Plus Jakarta Sans'] text-[#000929] transition hover:border-[#CFCDEB] flex items-center justify-center"
+                            href="#">
+                            Login
+                        </a>
+                    
+                        <!-- Tombol Sign up -->
+                        <a class="rounded-lg bg-[#7065F0] px-6 py-3 text-[18px] font-bold font-['Plus Jakarta Sans'] text-white transition hover:bg-[#5E55D6] flex items-center justify-center"
+                            href="#">
+                            Sign up
+                        </a>
+                    </div>
+                    
+                    <button
+                        class="block rounded-sm bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden">
+                        <span class="sr-only">Toggle menu</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    
+
+
+    <section class="relative mt-[100px] h-[800px] bg-gradient-to-b from-[#E0DEF7] to-transparent flex items-center px-[70px] sm:px-[20px] lg:px-[70px]">
+        <div class="max-w-[600px]">
+            <!-- Title -->
+            <h1 class="text-[64px] font-bold text-[#000929] font-['Plus Jakarta Sans'] leading-tight mb-[32px]">
+                Buy, sell, or manage office supplies easily
+            </h1>
+    
+            <!-- Description -->
+            <p class="text-[20px] font-medium text-[#000929] font-['Plus Jakarta Sans'] mb-[44px]">
+                The best platform to buy, sell, or manage ATK & IT stock with no extra fees.
+            </p>
+    
+            <!-- Button -->
+            <a href="#" class="inline-block bg-[#7065F0] text-white text-[16px] font-bold font-['Plus Jakarta Sans'] px-[32px] py-[16px] rounded-lg transition hover:bg-[#5E55D6]">
+                Find Products
+            </a>
+
+            <!-- Feature Image -->
+            <div class="mt-[50px]">
+                <img src="/images/features.svg" alt="Features" class="max-w-full">
+            </div>
+        </div>
+    
+        <!-- Image -->
+        <div class="flex-1 flex justify-end">
+            <img src="/images/banner.svg" alt="Office Illustration" class="max-w-[900px] w-full">
+        </div>
+    </section>
+
+    <section class="bg-[#FFFFFF] px-[70px] sm:px-[20px] lg:px-[70px] py-[100px] flex flex-wrap items-center">
+        <!-- Left Section -->
+        <div class="max-w-[440px] bg-[#F7F7FD] border border-[#E0DEF7] rounded-[8px] mr-[64px]">
+            <!-- Title -->
+            <h2 class="text-[34px] font-bold text-[#100A55] font-['Plus Jakarta Sans'] mb-[16px] mt-[40px] mr-[40px] ml-[40px]">
+                The new way to find office essentials
+            </h2>
+    
+            <!-- Description -->
+            <p class="text-[18px] font-medium text-[#100A55] font-['Plus Jakarta Sans'] mb-[24px] mx-[40px]">
+                Find top office supplies, computers, and accessories from 10k+ products.
+            </p>
+    
+            <!-- Button -->
+            <a href="#" class="inline-block bg-[#100A55] text-white text-[14px] font-bold font-['Plus Jakarta Sans'] px-[24px] py-[12px] rounded-md transition hover:bg-[#0D0845] mx-[40px]">
+                Browse Products
+            </a>
+    
+            <!-- Image -->
+            <div class="mt-[40px] ml-[40px]">
+                <img src="/images/office-essentials.svg" alt="Office Essentials Illustration" class="max-w-full">
+            </div>
+        </div>
+    
+        <!-- Right Section -->
+        <div class="flex-1 grid grid-cols-2 gap-x-[64px] gap-y-[64px]">
+            <!-- Card 1 -->
+            <div class="text-left">
+                <img src="/images/product-warranty.svg" alt="Product Warranty" class="mb-[24px]">
+                <h3 class="text-[24px] font-bold text-[#000929] font-['Plus Jakarta Sans'] mb-[16px]">
+                    Product Warranty
+                </h3>
+                <p class="text-[17px] text-[#4D5461] font-['Plus Jakarta Sans']">
+                    We offer warranty protection for all office supplies, ensuring reliability for your business.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="text-left">
+                <img src="/images/best-price.svg" alt="Best Price" class="mb-[24px]">
+                <h3 class="text-[24px] font-bold text-[#000929] font-['Plus Jakarta Sans'] mb-[16px]">
+                    Best Price
+                </h3>
+                <p class="text-[17px] text-[#4D5461] font-['Plus Jakarta Sans']">
+                    Not sure what budget suits your office needs? No worries, we help you find the best deals.
+                </p>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="text-left">
+                <img src="/images/lowest-cost.svg" alt="Lowest Cost" class="mb-[24px]">
+                <h3 class="text-[24px] font-bold text-[#000929] font-['Plus Jakarta Sans'] mb-[16px]">
+                    Lowest Cost
+                </h3>
+                <p class="text-[17px] text-[#4D5461] font-['Plus Jakarta Sans']">
+                    Enjoy competitive pricing with exclusive B2B, B2G, and B2C discounts for bulk purchases.
+                </p>
+            </div>
+    
+            <!-- Card 4 -->
+            <div class="text-left">
+                <img src="/images/full-control.svg" alt="Full Control" class="mb-[24px]">
+                <h3 class="text-[24px] font-bold text-[#000929] font-['Plus Jakarta Sans'] mb-[16px]">
+                    Full Control
+                </h3>
+                <p class="text-[17px] text-[#4D5461] font-['Plus Jakarta Sans']">
+                    Easily track your orders, schedule deliveries, and manage office supplies with our smart platform.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-gradient-to-b from-[#FFFFFF] to-[#F0EFFB] py-16 px-8 text-center">
+        <div class="max-w-3xl mx-auto">
+          <h2 class="font-['Plus Jakarta Sans'] text-[40px] font-bold text-[#000929] mb-[16px]">
+            Based on your needs
+          </h2>
+          <p class="font-['Plus Jakarta Sans'] text-[16px] font-normal text-[#000929] mb-[72px]">
+            Top office supplies & IT picks for you.
+          </p>
+        </div>
+
+        <!-- Search Field & Sliding Tabs -->
+        <div class="flex justify-between items-center w-full max-w-6xl mx-auto mb-[48px]">
+            <!-- Sliding Tabs -->
+            <div class="flex bg-[#F0EFFB] p-1 rounded-lg border border-[#E0DEF7] px-2 py-2 border-[1.5px]">
+                <button class="px-6 py-3 bg-white font-['Plus Jakarta Sans'] text-[#7065F0] text-[18px] font-bold rounded-lg shadow-sm border-2 border-[#E0DEF7] shadow-none">
+                    Best Sellers
+                </button>
+                <button class="px-6 py-3 font-['Plus Jakarta Sans'] text-[#807DA8] text-[18px] font-medium shadow-none">
+                    Top Picks
+                </button>
+            </div>
+
+            <!-- Search Field -->
+            <div class="relative w-[350px]">
+                <input type="text" placeholder="Search..." 
+                    class="w-full py-[20px] px-[16px] pl-[56px] bg-[#F7F7FD] rounded-lg border-2 border-[#E0DEF7] text-[#000929] 
+                    placeholder:text-[#807DA8] shadow-sm focus:outline-none font-medium text-[16px] leading-[24px] 
+                    font-['Plus Jakarta Sans']">
+                <span class="absolute left-[18px] top-1/2 -translate-y-1/2">
+                    <img src="/images/search.svg" alt="Search" class="w-[24px] h-[24px]">
+                </span>
+            </div>
+        </div>
+
+        
+        <!-- Product Cards Section -->
+        
+        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-[32px] mb-[96px]">
+            <div class="bg-white rounded-xl shadow-md p-6 border border-[#E0DEF7] relative">
+                <!-- Popular Banner -->
+                
+                <div class="absolute left-0 top-[53%] -translate-x-5 px-3 py-1 rounded-r-md flex items-center">
+                    <img src="/images/popular.svg">
+                </div>
+            
+                <!-- Product Image -->
+                <div class="flex justify-center mb-[50px] mt-[10px]">
+                    <img src="/images/macbook-m3.svg" alt="MacBook Pro M3" class="w-[90%] rounded-lg">
+                </div>
+            
+                <!-- Price & Wishlist -->
+                <div class="flex justify-between items-center mb-[4px]">
+                    <p class="text-[#7065F0] font-bold text-[24px]">
+                        $2,095 <span class="text-[#000929] text-[16px] font-medium">/unit</span>
+                    </p>
+                    <button>
+                        <img src="/images/favorited.svg" alt="Add to Favorited">
+                    </button>
+                </div>
+            
+                <!-- Product Title -->
+                <h3 class="text-[#000929] font-bold text-[24px] text-start mb-[8px]">MacBook Pro M3</h3>
+            
+                <!-- Product Description -->
+                <p class="text-[#808494] font-medium text-[16px] text-start">Apple M3 Chip, 8 GB, 512 GB</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 border border-[#E0DEF7] relative">
+                <!-- Popular Banner -->
+                
+                <div class="absolute left-0 top-[53%] -translate-x-5 px-3 py-1 rounded-r-md flex items-center">
+                    <img src="/images/popular.svg">
+                </div>
+            
+                <!-- Product Image -->
+                <div class="flex justify-center mb-[50px] mt-[10px]">
+                    <img src="/images/macbook-m3.svg" alt="MacBook Pro M3" class="w-[90%] rounded-lg">
+                </div>
+            
+                <!-- Price & Wishlist -->
+                <div class="flex justify-between items-center mb-[4px]">
+                    <p class="text-[#7065F0] font-bold text-[24px]">
+                        $2,095 <span class="text-[#000929] text-[16px] font-medium">/unit</span>
+                    </p>
+                    <button>
+                        <img src="/images/favorited.svg" alt="Add to Favorited">
+                    </button>
+                </div>
+            
+                <!-- Product Title -->
+                <h3 class="text-[#000929] font-bold text-[24px] text-start mb-[8px]">MacBook Pro M3</h3>
+            
+                <!-- Product Description -->
+                <p class="text-[#808494] font-medium text-[16px] text-start">Apple M3 Chip, 8 GB, 512 GB</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 border border-[#E0DEF7] relative">
+                <!-- Popular Banner -->
+                
+                <div class="absolute left-0 top-[53%] -translate-x-5 px-3 py-1 rounded-r-md flex items-center">
+                    <img src="/images/popular.svg">
+                </div>
+            
+                <!-- Product Image -->
+                <div class="flex justify-center mb-[50px] mt-[10px]">
+                    <img src="/images/macbook-m3.svg" alt="MacBook Pro M3" class="w-[90%] rounded-lg">
+                </div>
+            
+                <!-- Price & Wishlist -->
+                <div class="flex justify-between items-center mb-[4px]">
+                    <p class="text-[#7065F0] font-bold text-[24px]">
+                        $2,095 <span class="text-[#000929] text-[16px] font-medium">/unit</span>
+                    </p>
+                    <button>
+                        <img src="/images/favorited.svg" alt="Add to Favorited">
+                    </button>
+                </div>
+            
+                <!-- Product Title -->
+                <h3 class="text-[#000929] font-bold text-[24px] text-start mb-[8px]">MacBook Pro M3</h3>
+            
+                <!-- Product Description -->
+                <p class="text-[#808494] font-medium text-[16px] text-start">Apple M3 Chip, 8 GB, 512 GB</p>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <a href="#" class="inline-block bg-[#100A55] text-white text-[16px] font-bold font-['Plus Jakarta Sans'] px-[32px] py-[16px] rounded-md transition hover:bg-[#0D0845] mx-[40px] mb-[70px]">
+            Browse more products
+        </a>
+    </section>
+      
+
+    <footer class="bg-white">
+        <div class="max-w-6xl mx-auto px-6 mt-[80px]">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-[48px]">
+                <!-- Logo & Name -->
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <img src="/images/logo.svg" alt="Logo" class="w-[158px]">
+                    </div>
+                </div>
+    
+                <!-- About -->
+                <div>
+                    <h3 class="text-[16px] font-bold text-[#000929] mb-[16px]">ABOUT</h3>
+                    <ul class="space-y-2 text-[16px] font-medium text-[#4E546A]">
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Investors</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Resources -->
+                <div>
+                    <h3 class="text-[16px] font-bold text-[#000929] mb-[16px]">RESOURCES</h3>
+                    <ul class="space-y-2 text-[16px] font-medium text-[#4E546A]">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Terms & Privacy -->
+                <div>
+                    <h3 class="text-[16px] font-bold text-[#000929] mb-[16px]">TERMS & PRIVACY</h3>
+                    <ul class="space-y-2 text-[16px] font-medium text-[#4E546A]">
+                        <li><a href="#">Trust & Safety</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Garis full width -->
+        <div class="w-full border-t border-[1.5px] border-[#E8E6F9] mb-[32px]"></div>
+
+        <!-- Copyright & Social Media -->
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between mb-[32px]">
+            <p class="text-sm text-[#64748B]">©2025 BOS OFFICE. All rights reserved</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#"><img src="/images/facebook.svg" alt="Facebook" class="w-5 h-5 opacity-70 hover:opacity-100"></a>
+                <a href="#"><img src="/images/instagram.svg" alt="Instagram" class="w-5 h-5 opacity-70 hover:opacity-100"></a>
+                <a href="#"><img src="/images/twitter.svg" alt="Twitter" class="w-5 h-5 opacity-70 hover:opacity-100"></a>
+                <a href="#"><img src="/images/linkedin.svg" alt="LinkedIn" class="w-5 h-5 opacity-70 hover:opacity-100"></a>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script>
+        const header = document.getElementById("header");
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 10) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
+</body>
+
+</html>
